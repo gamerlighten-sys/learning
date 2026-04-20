@@ -1,0 +1,29 @@
+"""
+1. Consider a list of 10 elements:
+numList = [7, 11, 3, 10, 17, 23, 1, 4, 21, 5].
+Display the partially sorted list after three complete
+passes of Bubble sort.
+"""
+ 
+arr = [3, 2, -1, 8, 14, -6, 7]
+
+# bubble sort
+arr = [3, 2, -1, 8, 14, -6, 7]
+arr = [2, -1, 3, 8, -6, 7, 14]
+arr = [-1, 2, 3, -6, 7, 8, 14]
+arr = [-1, 2, -6, 3, 7, 8, 14]
+arr = [-1, -6, 2, 3, 7, 8, 14]
+
+# selection sort
+arr = [3, 2, -1, 8, 14, -6, 7]
+arr = [-6, 2, -1, 8, 14, 3, 7]
+arr = [-6, -1, 2, 8, 14, 3, 7]
+arr = [-6, -1, 2, 8, 14, 3, 7]
+arr = [-6, -1, 2, 3, 14, 8, 7]
+
+# insertion sort
+arr = [3, 2, -1, 8, 14, -6, 7]
+arr = [2, 3, -1, 8, 14, -6, 7]
+arr = [-1, 2, 3, 8, 14, -6, 7]
+arr = [-1, 2, 3, 8, 14, -6, 7]
+arr = [-1, 2, 3, 8, 14, -6, 7]
