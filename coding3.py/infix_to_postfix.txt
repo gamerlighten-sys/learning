@@ -1,0 +1,45 @@
+INFIX TO PREFIX
+1.A+B           +AB
+2.A+B*C         +A*BC
+3.(A+B)*C       *+ABC
+4.A*B+C         +*ABC
+5.A+B+C         ++ABC
+6.A*(B+C)       *A+BC
+7.(A+B)*(C-D)   *+AB-CD
+8.A+B*C-D       -+A*BCD
+9.(A-B)/(C+D)   /-AB+CD
+10.A*B-C/D      -*AB/CD
+INFIX TO POSTFIX
+1.A+B           AB+
+2.A+B*C         ABC*+
+3.(A+B)*C       AB+C*
+4.A*B+C         AB*C+
+5.A+B+C         AB+C+
+6.A*(B+C)       ABC+*
+7.(A+B)*(C-D)   AB+CD-*
+8.A+B*C-D       ABC*+D-
+9.(A-B)/(C+D)   AB-CD+/
+10.A*B-C/D     	AB*CD/-
+PREFIX TO INFIX
+1.+AB			A+B
+2.*AB 			A*B
+3.+A*BC			A+B*C
+4.*+ABC        	(A+B)*C
+5.-AB     		A-B
+6./AB       	A/B
+7.*A+BC			A*(B+C)
+8.-*ABC			A*B-C
+9./-AB+CD		(A-B)/(C+D)
+10.+*AB*CD  	(A*B)+(C*D)
+POSTFIX TO INFIX
+1.AB+			A+B
+2.AB*			A*B
+3.ABC*+			A+(B*C)
+4.AB+C*			(A+B)*C
+5.AB-			A-B
+6.AB/			A/B
+7.ABC+*			A*(B+C)
+8.AB*C-			(A*B)-C
+9.AB-CD+/		(A-B)/(C+D)
+10.AB*CD*+		(A*B)+(C* D)
+  
