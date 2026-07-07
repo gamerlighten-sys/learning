@@ -25,31 +25,31 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(3.5)
 
-        elif choice1 == "50%" or choice2 == "50%" or choice3 == "50%":
+        if choice1 == "50%" or choice2 == "50%" or choice3 == "50%":
             print("you got 50%, balance + 15 (and - 30 for your betting price)")
             balance += 15
             print(f"Balance: {balance}")
             time.sleep(2.5)
              
-        elif choice3 == "Ω":
+        if choice3 == "Ω":
             print("You got the horshoe, balance + 30 (and - 30 for your betting price)")
             balance += 30
             print(f"Balance: {balance}") 
             time.sleep(2.5)       
         
-        elif choice2 == "𓆟":
+        if choice2 == "𓆟":
             print("You got the fish, balance + 40 (and - 30 for your betting price)")
             balance += 40
             print(f"Balance: {balance}")    
             time.sleep(2.5)    
         
-        elif choice1 == "¶":
+        if choice1 == "¶":
             print("You got the 9, balance + 50 (and - 30 for your betting price)")
             balance += 50
             print(f"Balance: {balance}")  
             time.sleep(2.5)      
 
-        elif choice1 == "250%" or choice2 == "250%" or choice3 == "250%":
+        if choice1 == "250%" or choice2 == "250%" or choice3 == "250%":
             print("YOU GOT 250%, balance + 75 (and - 30 for your betting price)")
             balance += 75
             print(f"Balance: {balance}")
@@ -57,7 +57,7 @@ def gambler(random_list1, random_list2, random_list3, balance):
 
 
 
-        elif choice1 == "W":
+        if choice1 == "W":
             if choice2 == "I":
                 if choice3 == "N":
                     print(f"YOU WON, balance + 250 tokens (and - 30 for your betting price)")
@@ -65,7 +65,7 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(3.5)
 
-        elif choice1 == "★":
+        if choice1 == "★":
             if choice2 == "☆":
                 if choice3 == "★":
                     print(f"THE STARS BLESS YOU, balance + 400 tokens (and - 30 for your betting price)")
@@ -73,7 +73,7 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(3.5)
 
-        elif choice1 == "♠":
+        if choice1 == "♠":
             if choice2 == "♣":
                 if choice3 == "♥":
                     print(f"YOU ARE THE JACK OF ALL TRADES, balance + 500 tokens (and - 30 for your betting price)")
@@ -81,7 +81,7 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(4)
 
-        elif choice1 == "6":
+        if choice1 == "6":
             if choice2 == "6":
                 if choice3 == "6":
                     print(f"YOU HAVE THE DEVIL'S LUCK, balance + 666 tokens (and - 30 for your betting price)")
@@ -89,7 +89,7 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(4)
 
-        elif choice1 == "7":
+        if choice1 == "7":
             if choice2 == "7":
                 if choice3 == "7":
                     print(f"YOU HAVE HIT THE JACKPOT, balance + 1000 tokens (and - 30 for your betting price)")
@@ -97,7 +97,7 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(4)
 
-        elif choice1 == "𓆗":
+        if choice1 == "𓆗":
             if choice2 == "𓆗":
                 if choice3 == "𓆗":
                     print(f"YOU ENTERED THE COBRAS DEN, balance + 1500 tokens (and - 30 for your betting price)")
@@ -105,16 +105,16 @@ def gambler(random_list1, random_list2, random_list3, balance):
                     print(f"balance: {balance}")
                     time.sleep(4)
 
-        else:
-            print(f"{balance}\n")
-            time.sleep(1.5)
         
-        return balance
+        if balance < 30:
+            print("GAME OVER, you ran out of tokens, go to the front desk to purchase more")
+
+    return balance
 
 
-random_list1 = ['7', '50%', '50%', 'W', 'I', 'N', '6', '250%', 'I', 'I', 'W', 'W', 'N', 'N', '50%', '50%', '¶', '¶', '¶', '𓆟', '𓆟', '𓆟', '★', '★', '☆', '♠', '♠', 'Ω', 'Ω', 'Ω', '𓆗']
-random_list2 = ['7', '50%', '50%', 'W', 'I', 'N', '6', '250%', 'I', 'I', 'W', 'W', 'N', 'N', '50%', '50%', '¶', '¶', '¶', '𓆟', '𓆟', '𓆟', '★', '★', '☆', '♣', '♣', 'Ω', 'Ω', 'Ω', '𓆗']
-random_list3 = ['7', '50%', '50%', 'W', 'I', 'N', '6', '250%', 'I', 'I', 'W', 'W', 'N', 'N', '50%', '50%', '¶', '¶', '¶', '𓆟', '𓆟', '𓆟', '★', '★', '☆', '♥', '♥', 'Ω', 'Ω', 'Ω', '𓆗']
+random_list1 = ['7', '50%', '50%', 'W', 'I', 'N', '6', '250%', 'I', 'I', 'W', 'W', 'W', 'W' 'N', 'N', '50%', '50%', '¶', '¶', '𓆟', '𓆟', '𓆟', '★', '★', '★', '☆', '♠', '♠', '♠', 'Ω', 'Ω', 'Ω', '𓆗']
+random_list2 = ['7', '50%', '50%', 'W', 'I', 'N', '6', '250%', 'I', 'I', 'I', 'W', 'W', 'I' 'N', 'N', '50%', '50%', '¶', '¶', '¶', '𓆟', '𓆟', '★', '★', '☆', '☆', '♣', '♣', '♣', 'Ω', 'Ω', 'Ω', '𓆗']
+random_list3 = ['7', '50%', '50%', 'W', 'I', 'N', '6', '250%', 'I', 'I', 'W', 'W', 'N',  'N', 'N', '50%', '50%', '¶', '¶', '¶', '𓆟', '𓆟', '𓆟', '★', '★', '★', '☆', '♥', '♥', 'Ω', 'Ω', '𓆗']
 
 key = """
 𓆗 + 𓆗 + 𓆗 = 1500 tokens        7 + 7 + 7 = 1000 tokens
